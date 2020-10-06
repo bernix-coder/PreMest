@@ -1,0 +1,40 @@
+.container{
+    max-width: 1330;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    width: 70%;
+    padding: 30px;
+}
+.col-2 h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    margin: 25px  0;
+}
+
+.col-2 p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
+    margin: 25px  0;
+    font-weight: lighter;
+}
+.side{
+    background-image: url(../images/bg-intro-desktop.svg);
+}

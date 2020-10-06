@@ -1,47 +1,33 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import logo from '../images/logo.svg'
 import '../styles/Navbar.css'
-
 function Navbar() {
     return (
         <>
-          <div className='navbar'>
-            <div className='nav-menu flex-row'>
-               <div className='nav-brand'>
-                    <Link to='/#' className='text-gray' style={{ fontSize:20,padding:20, textDecorationLine:"none",display:"block"}}>Huddle Blog</Link>
-               </div>
-           
-            <div>
-                <ul className='nav-items' >
-                    <li className='nav-link'>
-                        <Link to='/' style={{textDecorationLine:"none"}}>Home</Link>
-                    </li>
+           <div className='navbar'>
+                <div className='nav-menu'>
+                    <div className='row'>
+                        <div className=' logo'>
+                                <img src={logo} alt='logo'/>
+                        </div>
 
-                    <li className='nav-link'>
-                        <Link to='/category'style={{textDecorationLine:"none"}}>Category</Link>
-                    </li>
+                        <div >
+                            <ul className='nav-list'>
+                                <li><a href='/'>Home</a></li>
+                                <li><a href='/about'>About</a></li>
+                                <li><a href='/contact'>Contact</a></li>
+                                <li><a href='/blog'>Blog</a></li>
+                                <li><a href='/careers'>Careers</a></li>
+                                
 
-                    <li className='nav-link'>
-                        <Link to='/archive'style={{textDecorationLine:"none"}}>Archive</Link>
-                    </li>
+                            </ul>
+                        </div>
 
-                    <li className='nav-link'>
-                        <Link to='/pages' style={{textDecorationLine:"none"}}>Pages</Link>
-                    </li>
-                    <li className='nav-link'>
-                        <Link to='/contact'style={{textDecorationLine:"none"}}>Contact Us</Link>
-                    </li>
-                </ul>
-            </div>
-
-            <div className='social text-gray'>
-                <Link><i class="fa fa-facebook-official" aria-hidden="true"></i></Link>
-                <Link><i class="fa fa-instagram" aria-hidden="true"></i></Link>
-                <Link><i class="fa fa-twitter" aria-hidden="true"></i></Link>
-                <Link><i class="fa fa-youtube" aria-hidden="true"></i></Link>
-            </div>
-          </div>
-          </div>
+                        <button>Request Invite</button>
+                    </div>
+                </div>
+           </div>
         </>
     )
 }
