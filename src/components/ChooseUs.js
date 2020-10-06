@@ -1,16 +1,16 @@
 import React from 'react'
 import '../styles/ChooseUs.css'
 import api from '../images/icon-api.svg'
-import online from '../images/icons-online.svg'
+import online from '../images/icon-online.svg'
 import board from '../images/icon-onboarding.svg'
 import budget from '../images/icon-budgeting.svg'
 function ChooseUs() {
     return (
         <>
            <div className='container'>
-                <div>
+                <div className='text'>
                     <h2> Why choose Easybank?</h2>
-                    <p> We leverage Open Banking to turn your bank account into your financial hub. Control 
+                    <p> We leverage Open Banking to turn your bank account into your financial hub. <br/>Control 
  your finances like never before.
 
              </p>
