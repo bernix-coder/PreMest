@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 5px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px  0;
+}

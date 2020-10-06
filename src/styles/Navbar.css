@@ -1,0 +1,35 @@
+.navbar{
+    background: #fff;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+ .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .nav-menu{
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+}
+
+.navbar .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.navbar .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.navbar .social{
+    padding: 1.4rem 0;
+}
